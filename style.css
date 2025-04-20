@@ -1,0 +1,370 @@
+/* :root{
+    --y:#22222;
+    --x:#f4f8d3;
+    --z:#123458;
+    --w:#706d54;
+}
+
+body,h2{
+    margin:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.land{
+    background-image:url("pexels-pixabay-46798.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    color:var(--y);
+}
+header a{
+    text-decoration:none;
+    color:var(--y);
+    flex-wrap:wrap;
+    row-gap:1em;
+    min-width:120px;
+}
+header{
+    display:flex;
+    padding:1em;
+}
+#logo{
+    flex:3;
+    font-size:2em;
+    min-width:260px;
+}
+nav{
+    flex:2;
+    display:flex;
+    color:var(--z);
+    align-items:center;
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color:var(--w);
+}
+.main{
+    display:flex;
+    flex-direction:column;
+    height:40vh;
+    justify-content:center;
+    padding:2em;
+}
+.tag{
+    color:var(--x);
+    font-size:2em;
+    font-weight:bolder;
+}
+.tag1{
+    color:var(--x);
+}
+.main div{
+    margin-top:1.5em;
+}
+
+.main button{
+    width:20vw;
+    margin-top:2em;
+    border-radius:10px;
+    padding:.7em;
+    background-color: var(--z);
+    color:var(--x);
+    border:1px solid var(--z);
+}
+.Starter{
+    display:grid;
+    background:linear-gradient(to right,grey,rgb(70, 67, 67));
+    color:var(--x);
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+}
+#menu,#loc{
+    background:linear-gradient(to right,grey,rgb(70, 67, 67));
+    color:var(--z);
+    font-size:2em;
+    display:flex;
+    justify-content:center;
+}
+.Starter th{
+    color:black;
+    font-size:1.8em;
+}
+table{
+    width:100%;
+    padding:1em;
+}
+.Starter tr{
+    display:flex;
+    justify-content: center;
+    margin-top:.7em;
+}
+.Starter td:nth-child(1){
+    flex:1;
+    justify-self:left;
+}
+.Starter td:nth-child(2){
+    justify-self:right;
+}
+.location{
+    background:linear-gradient(to right,grey,rgb(70, 67, 67));
+    color:var(--x);
+    display:flex;
+    flex-wrap:wrap;
+}
+.location h2{
+    color:black;
+    margin-bottom: .7em;;
+}
+.location div{
+    flex:1;
+    padding:1em;
+    min-width:20px;
+}
+header i{
+    margin-right:.5em;
+
+} */
+:root {
+    --y: #1a1a1a;
+    --x: #e8f5c8;
+    --z: #345678;
+    --w: #8a7d65;
+    --highlight: #ffe066;
+    --bg-dark: #2c2f33;
+    --text-light: #f5f5f5;
+}
+
+/* Testimonials Section */
+#testimonials {
+    text-align: center;
+    background-color: var(--bg-dark);
+    color: var(--highlight);
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--bg-dark);
+    padding: 2em;
+    gap: 1em;
+}
+
+.testimonial {
+    background-color: var(--z);
+    color: var(--x);
+    border-left: 4px solid var(--highlight);
+    padding: 1em;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+footer {
+    background-color: var(--z);
+    color: var(--x);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.footer-content a {
+    color: var(--highlight);
+    margin: 0 0.5em;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-content a:hover {
+    color: var(--w);
+}
+
+
+body, h2 {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.land {
+    position: relative;
+    background-image: url("pexels-pixabay-46798.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--y);
+    overflow: hidden;
+}
+
+.land::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.land > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+header a {
+    text-decoration: none;
+    color: var(--y);
+    flex-wrap: wrap;
+    row-gap: 1em;
+    min-width: 120px;
+}
+
+header {
+    display: flex;
+    padding: 1em;
+}
+
+#logo {
+    flex: 3;
+    font-size: 2em;
+    min-width: 260px;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    color: var(--z);
+    align-items: center;
+}
+
+nav a {
+    flex: 1;
+}
+
+nav a:hover {
+    color: var(--w);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tag {
+    color: var(--x);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.tag1 {
+    color: var(--x);
+}
+
+.main div {
+    margin-top: 1.5em;
+}
+
+.main button {
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: 0.7em;
+    background-color: var(--z);
+    color: var(--x);
+    border: 1px solid var(--z);
+}
+
+.Starter {
+    display: grid;
+    background: linear-gradient(to right, #7f8c8d, #2c3e50); 
+    color: var(--x);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#menu, #loc {
+    background: linear-gradient(to right, #3a3f47, #2b2e33);
+    color: var(--highlight); 
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#coimbatore{
+    text-align:right;
+}
+.Starter th {
+    color: black;
+    font-size: 1.8em;
+}
+
+table {
+    width: 100%;
+    padding: 1em;
+}
+
+.Starter tr {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7em;
+}
+
+.Starter td:nth-child(1) {
+    flex: 1;
+    justify-self: left;
+}
+
+.Starter td:nth-child(2) {
+    justify-self: right;
+}
+.contact {
+    color: var(--highlight);
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 10px;
+    width: fit-content;
+    line-height: 1.6em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+.location {
+    background: linear-gradient(to right, #7f8c8d, #2c3e50);
+    color: var(--x);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location h2 {
+    color: black;
+    margin-bottom: 0.7em;
+}
+
+.location div {
+    flex: 1;
+    padding: 1em;
+    min-width: 20px;
+}
+
+header i {
+    margin-right: 0.5em;
+}
